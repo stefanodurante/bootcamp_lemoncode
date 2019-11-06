@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+html,
+body {
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* Sets up the Base 10 stuff */
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 94%;
+    max-width: 400px;
+    font-size: 1.6rem;
+    font-family: Roboto;
+}
+
+.input__wrp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6em;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+input {
+    font-size: 1.6rem;
+    height: 40px;
+    padding: 8px;
+}
+
+button {
+    display: inline-block;
+    background-color: lightslategray;
+    border-radius: 8px;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    text-decoration: none;
+}
