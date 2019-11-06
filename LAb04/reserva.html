@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Módulo 4 - Funciones y Eventos - Laboratorio</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <header id="title">
+            <h1>Módulo 4 - Funciones y Eventos - Laboratorio</h1>
+        </header>
+        <main>
+            <div class="block block-reserva">
+                <h2>Laboratório Reserva</h2>
+
+                <div>
+                    <label>
+                        <span>Tipo de habitación</span>
+                        <select id="room-type">
+                            <option value="100">Standard</option>
+                            <option value="120">Junior Suite</option>
+                            <option value="150">Suite</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Spa</span>
+                        <input type="checkbox" value="" id="spa"/>
+                    </label>
+                </div>
+                <div>
+                        <label>
+                            <span>Tamaño habitación</span>
+                            <select id="room-capacity">
+                                <option value="1">Standard</option>
+                                <option value="2">Doble</option>
+                                <option value="3">Triple</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label><span>Num noches</span>
+                        <input type="text" id="nights" value=""/>
+                    </label>
+                    </div>
+                    <div>
+                    <label><span>Num noches parking</span>
+                    <input type="text" id="park-nights" value=""/>
+                </label>
+                </div>
+                <div class="">
+                    <button class="button-calc" id="calculate">Calcular</button>
+                </div>
+            </div>
+        </main>
+        <script src="reserva.js"></script>
+    </body>
+</html>

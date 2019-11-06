@@ -1,0 +1,92 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Roboto, Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+main {
+  text-align:center;
+}
+.block {
+  text-align:center;
+}
+#title {
+  text-align: center;
+}
+
+input {
+  border:1px solid lightgray;
+  display:block;
+  margin:0 auto 1rem;
+  width:200px;
+  height:24px;
+}
+
+.c-buttons {
+  margin: 0 auto;
+  width:200px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size:16px;
+}
+.c-button__enviar {
+  width:100%;
+}
+button {
+  background:lightseagreen;
+  width:30px;
+  height:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-operating {
+  display:flex;
+  justify-content: center;
+}
+.c-number {
+  max-width:none;
+  width:40px;
+  margin:0 1rem 1rem;
+  text-align:right;
+  padding:0 0.2rem;
+}
+ul, li {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:30px;
+}
+li {
+  margin:0 20px;
+}
+
+label {
+  display: flex;
+  flex-direction:row;
+ justify-content:space-between;
+}
+
+.block-reserva {
+  width:400px;
+  margin:0 auto;
+  
+}
+.block-reserva div {
+  margin-bottom:20px;
+}
+.block-reserva input {
+  width: auto;
+  margin:0;
+}
+.button-calc {
+  width:50%;
+  margin:0 auto;
+}
