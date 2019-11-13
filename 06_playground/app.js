@@ -9,18 +9,7 @@ var isValidFullName = fullname => fullname && (fullname.length >= 5);
 // - validar el nombre
 // - Si es invalido => aplicamos regla CSS para error sobre el input
 // - Si es válido => no aplicamos regla CSS (la quitamos)
-var validateFullName = () => {
-    var fullNameField = document.getElementById("fullName");
-    var valid = isValidFullName(fullNameField.value);
 
-    if (valid) {
-        fullNameField.classList.remove("error");
-    } else {
-        fullNameField.classList.add("error");
-    }
-
-    return valid;
-}
 
 // 2. bithdate validation
 // - Year. Mayor que 1850. Menor o igual al año actual.
@@ -50,18 +39,7 @@ var isValidDate = date => {
     return validYear && validMonth && validDay;
 }
 
-var validateBirthDate = () => {
-    var birthdayField = document.getElementById("birthday");
-    var valid = isValidDate(birthdayField.value);
 
-    if (valid) {
-        birthdayField.classList.remove("error");
-    } else {
-        birthdayField.classList.add("error");
-    }
-
-    return valid;
-}
 
 // 3. DNI validation
 // - comprobar si el numero es correcto
@@ -80,18 +58,6 @@ var isValidDNI = dni => {
     return isValidDNINumber(dniNumber) && isValidDNILetter(dniLetter, dniNumber);
 }
 
-var validateDNI = () => {
-    var dniField = document.getElementById("dni");
-    var valid = isValidDNI(dniField.value);
-
-    if (valid) {
-        dniField.classList.remove("error");
-    } else {
-        dniField.classList.add("error");
-    }
-
-    return valid;
-};
 
 // 4. Mobile validation
 
@@ -104,41 +70,29 @@ var isValidMobile = mobile => {
     );
 }
 
-var validateMobile = () => {
-    var mobileField = document.getElementById("mobile");
-    var valid = isValidMobile(mobileField.value);
+
+
+var validateInput = (id, validationFunction) => {
+    var field = document.getElementById(id);
+    var valid = validationFunction(field.value);
 
     if (valid) {
-        mobileField.classList.remove("error");
+        field.classList.remove("error");
     } else {
-        mobileField.classList.add("error");
+        field.classList.add("error");
     }
 
     return valid;
 }
 
-
 // 5. General Algorithm
 var validateForm = (event) => {
     event.preventDefault(); /* impide al navegador hacer la acción de default */
 
-    validateFullName();
-    /*
-     * validateFullName
-     */
-    validateBirthDate();
-    /*
-     * validateBirthDate
-     */
-
-    validateDNI();
-    /*
-     * validateDNI
-     */
-    validateMobile();
-    /*
-     * validatePhone
-     */
+    validateInput("fullName", isValidFullName);
+    validateInput("birthday", isValidDate);
+    validateInput("dni", isValidDNI);
+    validateInput("mobile", isValidMobile);
     console.log("El evento funciona");
 }
 
