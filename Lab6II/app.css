@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-crypto {}
