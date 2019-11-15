@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
@@ -12,6 +15,31 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
 }
-
-.c-crypto {}
+textarea {
+    width:100%;
+    margin-bottom:1rem;
+    height:120px;
+    padding:8px;
+}
+.c-btn__wrp {
+    width:100%;
+    margin-bottom:1rem;
+    display:flex;
+    justify-content: space-between;
+}
+.c-buttons {
+    width:200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:16px;
+    height:40px;
+    background:lightseagreen;
+    border:none;
+    border-radius:8px;
+  }
+.c-crypto {
+    width:100%;
+}
