@@ -57,8 +57,8 @@ document.getElementById("decrypt").addEventListener("click", getDecryption);
 /////// Generador aleatorio
 
 
-const randomPick = (start, end, step) => {
+const randomPick = (n, min, max) => {
 
-  }
+}
   
-  randomPick(10, 1, 100);
+randomPick(10, 1, 100);
