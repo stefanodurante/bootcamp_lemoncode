@@ -38,6 +38,7 @@ const patternCredit = /^[5][12345]\d{2}(-|\s|_)?\d{5}(-|\s|_)?\d{3}(-|\s|_)?\d{4
 
 const valuesCredit = ["5299 64000 000 0000", "5299-64000-000-0000", "5299640000000000"];
 
+// caso 1
 valuesCredit.forEach(value => {
     console.log('Regex matchs with ' + value + '? ->', patternCredit.test(value));
 })
