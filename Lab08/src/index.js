@@ -1,1 +1,3 @@
-console.log("Hola Parcel");
+import * as MyGreet from "./utils";
+
+console.log(MyGreet.greetings());
